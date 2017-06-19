@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://cluster-1.westeurope.cloud.swanager.com:4945/api/v1/session
+    body:
+      encoding: UTF-8
+      string: '{"email":"test@test.com","password":"testtest"}'
+    headers:
+      User-Agent:
+      - excon/0.56.0
+      Authorization:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization,
+        accept, origin, Cache-Control, X-Requested-With
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jun 2017 03:34:30 GMT
+      Content-Length:
+      - '213'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"token":{"token":"1409e564-30ac-2806-a31d-c2987cf65eb29f792136454f8eed","user":{"id":"53d93e54-8fa7-df9b-d081-a42ff368d5222f781624b38b44f3","email":"test@test.com"},"last_used":"2017-06-19T03:34:30.689518805Z"}}
+
+'
+    http_version: 
+  recorded_at: Mon, 19 Jun 2017 03:34:30 GMT
+recorded_with: VCR 3.0.3

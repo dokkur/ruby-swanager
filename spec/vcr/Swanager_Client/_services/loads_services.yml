@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://cluster-1.westeurope.cloud.swanager.com:4945/api/v1/services
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.56.0
+      Authorization:
+      - 1409e564-30ac-2806-a31d-c2987cf65eb29f792136454f8eed
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization,
+        accept, origin, Cache-Control, X-Requested-With
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 19 Jun 2017 03:34:31 GMT
+      Content-Length:
+      - '635'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"services":[{"id":"be4c91bf-a5d7-d411-a75b-bed6406cb328992de63b14c0bda0","name":"","image":"","command":"","ns_name":"test1-test1-e2eb10d6","replicas":null,"parallelism":0,"env":[],"published_ports":[{"internal":1234,"external":3000,"protocol":"tcp","disabled":true}],"application_id":"8f1f625a-e2f6-c63d-550c-ccebafda031413332338f2546fd7","volumes":[]},{"id":"4b41b2a9-2bea-47a4-d1af-f977919236700262f968daf39c73","name":"test2","image":"","command":"","ns_name":"test2-test2-96422a75","replicas":1,"parallelism":0,"env":[],"published_ports":[],"application_id":"65befc70-00a4-0842-2414-a84f4d3beab881ae7fbc4b400be2","volumes":[]}]}
+
+'
+    http_version: 
+  recorded_at: Mon, 19 Jun 2017 03:34:31 GMT
+recorded_with: VCR 3.0.3

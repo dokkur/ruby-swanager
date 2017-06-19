@@ -1,2 +1,0 @@
-module Swanager::Base
-end

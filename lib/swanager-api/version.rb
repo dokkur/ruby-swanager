@@ -1,4 +1,4 @@
 module Swanager
-  VERSION = '0.1.0'
+  VERSION = '0.0.1'
   API_VERSION = '1'
 end
