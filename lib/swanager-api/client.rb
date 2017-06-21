@@ -11,8 +11,8 @@ module Swanager
 
     attr_accessor :connection
 
-    def initialize token=nil
-      @connection = Connection.new token
+    def initialize token=nil, url=nil
+      @connection = Connection.new token, url
     end
 
     def applications

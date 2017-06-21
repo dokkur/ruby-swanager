@@ -75,6 +75,10 @@ Get services:
 ```ruby
 client.services
 ```
+or
+```ruby
+client.services(app.id)
+```
 Create service:
 ```ruby
 client.services.create({ app_id: 'id', name: 'app_name' })
