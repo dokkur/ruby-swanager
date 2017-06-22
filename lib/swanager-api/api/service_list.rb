@@ -28,7 +28,7 @@ module Swanager
     def create params
       response = request method: :post, path: '/services', body: params.to_json
 
-      true
+      Service.new(@connection, response['service'])
     end
 
     def delete id

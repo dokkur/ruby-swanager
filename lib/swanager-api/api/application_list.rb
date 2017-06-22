@@ -27,7 +27,7 @@ module Swanager
     def create params
       response = request method: :post, path: '/apps', body: params.to_json
 
-      true
+      Application.new(@connection, response['application'])
     end
 
     def each &block
