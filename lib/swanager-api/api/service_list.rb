@@ -26,6 +26,8 @@ module Swanager
     end
 
     def create params
+      params.merge!({ app_id: @app_id }) if @app_id.present?
+
       response = request method: :post, path: '/services', body: params.to_json
 
       Service.new(@connection, response['service'])
